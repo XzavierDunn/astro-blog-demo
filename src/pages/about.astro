@@ -1,0 +1,46 @@
+---
+const pageTitle = "About Me";
+const textColor = "blue";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <a href="/">Home</a>
+    <a href="/blog/">Blog Posts</a>
+    <a href="/about/">About</a>
+
+    <h1>About Page</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum minus
+      perspiciatis voluptatum eos harum fugit fuga, omnis inventore quibusdam,
+      voluptates pariatur quis vel ratione autem reprehenderit assumenda dolorem
+      eum est?
+    </p>
+    <p class="customText">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum minus
+      perspiciatis voluptatum eos harum fugit fuga, omnis inventore quibusdam,
+      voluptates pariatur quis vel ratione autem reprehenderit assumenda dolorem
+      eum est?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum minus
+      perspiciatis voluptatum eos harum fugit fuga, omnis inventore quibusdam,
+      voluptates pariatur quis vel ratione autem reprehenderit assumenda dolorem
+      eum est?
+    </p>
+
+    <style define:vars={{ textColor }}>
+      .customText {
+        color: var(--textColor);
+        font-weight: bold;
+      }
+    </style>
+  </body>
+</html>
